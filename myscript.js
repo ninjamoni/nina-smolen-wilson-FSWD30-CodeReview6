@@ -28,15 +28,15 @@ for (var i=0; i < newCds.length; i++) {
 	'<div class="columsCds col-md-4 col-sm-12" id="' + i +'">' + 
 		'<div class="pic"><img class="imgCds rounded" src="' + newCds[i].img + '">' + 
 		'</div>' + 
-		'<div class="details my-3 bg-light">Title: ' + newCds[i].title 
-					 + ' <br>Author: ' + newCds[i].author 
-					 + ' <br>Genre: ' + newCds[i].genre 
-					 + ' <br>Publisher: ' + newCds[i].publisher 
+		'<div class="details my-3 bg-light"><b>Title</b>: ' + newCds[i].title 
+					 + ' <br><b>Author</b>: ' + newCds[i].author 
+					 + ' <br><b>Genre</b>: ' + newCds[i].genre 
+					 + ' <br><b>Publisher</b>: ' + newCds[i].publisher 
 					 + ' <br> ' 
 					 + 
 		'</div>' + 
-		'<div class="ratandstars"><div class="rating"><button id="add" class="btnrating" value="">Rating:</button>' + 
-		'</div>' + '<div class="stars" id="rating"><span> ★</span><span>★</span><span>★</span><span>★</span><span>★ </span>' + newCds[i].rating + '</div></div>' 
+		'<div class="ratandstars"><div class="rating"><button id="add" class="btnrating" value=""><b>Rating</b>:</button>' + 
+		'</div>' + '<div class="stars" id="rating"><span> ★</span><span>★</span><span>★</span><span>★</span><span>★ </span>' + '<b>' + newCds[i].rating + '</b>' + '</div></div>' 
 	'</div>';
 }
 
@@ -74,15 +74,15 @@ for (var i=0; i < newBooks.length; i++) {
 	'<div class="columsBooks col-md-4 col-sm-12" id="' + i +'">' + 
 		'<div class="pic"><img class="imgBooks rounded" src="' + newBooks[i].img + '">' + 
 		'</div>' + 
-		'<div class="details my-3 bg-light outline-dark">Title: ' + newBooks[i].title 
-					 + ' <br>Author: ' + newBooks[i].author 
-					 + ' <br>Genre: ' + newBooks[i].genre 
-					 + ' <br>Publisher: ' + newBooks[i].publisher 
+		'<div class="details my-3 bg-light outline-dark"><b>Title</b>: ' + newBooks[i].title 
+					 + ' <b><br>Author</b>: ' + newBooks[i].author 
+					 + ' <b><br>Genre</b>: ' + newBooks[i].genre 
+					 + ' <b><br>Publisher</b>: ' + newBooks[i].publisher 
 					 + ' <br> ' 
 					 + 
 		'</div>' + 
-		'<div class="ratandstars"><div class="rating"><button id="add" class="btnrating" value="">Rating:</button>' + 
-		'</div>' + '<div class="stars" id="sarat"><span>   ★</span><span>★</span><span>★</span><span>★</span><span>★ </span>' + newBooks[i].rating + '</div></div>' 
+		'<div class="ratandstars"><div class="rating"><button id="add" class="btnrating" value=""><b>Rating</b>:</button>' + 
+		'</div>' + '<div class="stars" id="sarat"><span>   ★</span><span>★</span><span>★</span><span>★</span><span>★ </span>' + '<b>' + newBooks[i].rating +'</b>' + '</div></div>' 
 	'</div>';
 }
 
@@ -119,15 +119,15 @@ for (var i=0; i < newDvds.length; i++) {
 	'<div class="columsDvd col-md-4 col-sm-12" id="' + i +'">' + 
 		'<div class="pic"><img Class="imgDvds rounded" src="' + newDvds[i].img + '">' + 
 		'</div>' + 
-		'<div class="details my-3 bg-light outline-dark">Title: ' + newDvds[i].title 
-					 + ' <br>Author: ' + newDvds[i].author 
-					 + ' <br>Genre: ' + newDvds[i].genre 
-					 + ' <br>Publisher: ' + newDvds[i].publisher 
+		'<div class="details my-3 bg-light outline-dark"><b>Title</b>: ' + newDvds[i].title 
+					 + ' <br><b>Author</b>: ' + newDvds[i].author 
+					 + ' <br><b>Genre</b>: ' + newDvds[i].genre 
+					 + ' <br><b>Publisher</b>: ' + newDvds[i].publisher 
 					 + ' <br> ' 
 					 + 
 		'</div>' + 
-		'<div class="ratandstars"><div class="rating"><button id="add" class="btnrating" value="">Rating:</button>' + 
-		'</div>' + '<div class="stars" id="rating"><span>   ★</span><span>★</span><span>★</span><span>★</span><span>★ </span>' + newDvds[i].rating + '</div></div>' 
+		'<div class="ratandstars"><div class="rating"><button id="add" class="btnrating" value=""><b>Rating</b>:</button>' + 
+		'</div>' + '<div class="stars" id="rating"><span>   ★</span><span>★</span><span>★</span><span>★</span><span>★ </span>' + '<b>' + newDvds[i].rating + '</b>' + '</div></div>' 
 	'</div>';
 }
 
@@ -162,14 +162,14 @@ for (var i=0; i < newComics.length; i++) {
 	'<div class="columsComics col-md-4 col-sm-12" id="' + i +'">' + 
 		'<div class="pic"><img class="imgComics rounded" src="' + newComics[i].img + '">' + 
 		'</div>' + 
-		'<div class="details my-3 bg-light outline-dark">Title: ' + newComics[i].title 
-					 + ' <br>Author: ' + newComics[i].author 
-					 + ' <br>Genre: ' + newComics[i].genre 
-					 + ' <br>Publisher: ' + newComics[i].publisher 
+		'<div class="details my-3 bg-light outline-dark"><b>Title</b>: ' + newComics[i].title 
+					 + ' <br><b>Author</b>: ' + newComics[i].author 
+					 + ' <br><b>Genre</b>: ' + newComics[i].genre 
+					 + ' <br><b>Publisher</b>: ' + newComics[i].publisher 
 					 + ' <br> ' 
 					 + 
 		'</div>' + 
-		'<div class="ratandstars"><div class="rating"><button id="add" class="btnrating" value="">Rating:</button>' + 
-		'</div>' + '<div class="stars" id="rating"><span>   ★</span><span>★</span><span>★</span><span>★</span><span>★ </span>' + newComics[i].rating + '</div></div>' 
+		'<div class="ratandstars"><div class="rating"><button id="add" class="btnrating" value=""><b>Rating:</b></button>' + 
+		'</div>' + '<div class="stars" id="rating"><span>   ★</span><span>★</span><span>★</span><span>★</span><span>★ </span>' + '<b>' + newComics[i].rating + '</b>'  + '</div></div>' 
 	'</div>';
 }

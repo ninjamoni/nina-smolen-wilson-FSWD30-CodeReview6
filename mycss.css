@@ -1,0 +1,140 @@
+
+	.jumbotron{
+		background-color: #fff4ea;
+		border: 2px solid #008080;
+		box-shadow: 2px 4px gray;
+		border-radius: 4px;
+	}
+
+	.colhead{
+		background-color: #008080;
+		color: white;
+		text-shadow: 2px 2px 4px #000000; 
+		border-radius: 50px;
+		padding: 18px;
+		margin: 20px 0px 10px 0px;
+		border: lightcoral 4px solid;
+		border-style: groove;
+		text-align: center;
+	}
+
+	.columsCds{
+		border: #008080 4px solid;
+		border-radius: 15px;
+		background-color: #f2f2f2;	
+		transition: transform .2s; 
+	}
+
+	.columsCds:hover{
+		transform: scale(1.1);
+	}
+
+	.columsBooks{
+		border: lightcoral 4px solid;
+		border-radius: 15px;
+		background-color: #f2f2f2;
+		transition: transform .2s; 
+	}
+
+	.columsBooks:hover{
+		transform: scale(1.1);
+	}
+
+	.columsDvd{
+		border: #008080 4px solid;
+		border-radius: 15px;
+		background-color: #f2f2f2;
+		transition: transform .2s; 
+	}
+
+	.columsDvd:hover{
+		transform: scale(1.1);
+	}
+
+	.columsComics{
+		border: lightcoral 4px solid;
+		border-radius: 15px;
+		background-color: #f2f2f2;
+	}
+
+	.columsComics:hover{
+		transform: scale(1.1);
+	}
+
+	.pic{
+		display: flex; 
+		justify-content: center;
+	}
+
+	img{
+		border: 1px solid;
+		margin-top: 10px;
+    	padding: 6px;
+    	box-shadow: 4px 8px #888888;
+    	/*transition: transform .2s; */
+	}
+
+	/*img:hover{
+		transform: scale(1.2);
+	}*/
+
+	.imgCds{
+		width: 100%;
+		height: 350px;
+	}
+
+	.imgBooks{
+		width: 80%;
+		height: 400px;
+	}
+
+	.imgDvds{
+		width: 70%;
+		height: 400px;
+	}
+
+	.imgComics{
+		width: 100%;
+		height: 500px;
+	}
+
+	.details{
+		border:  1px solid lightgrey;
+		border-radius: 5px;
+		box-shadow: 2px 4px #888888;
+		padding: 6px;
+	}
+
+	.ratandstars{
+		display: flex;
+		align-items: center ; 
+	}
+
+	.btnrating{
+		border-radius: 10px;
+		padding: 10px;
+	}
+
+	.rating{
+		padding-bottom: 20px;
+	}
+
+	.stars{
+		padding-bottom: 20px;
+	}
+
+	.addmedia{
+		margin-top: 40px;
+		padding: 20px 20px;
+		display: flex;
+		justify-content: space-evenly
+	}
+
+	.footer{
+		background-color: darkgray;
+		color: white;
+		line-height: 3;
+		border-radius: 2px;
+		margin-top:  40px;
+
+	}

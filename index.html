@@ -5,133 +5,22 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>CodeReview 6</title>
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="mycss.css" type="text/css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	 <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 
 
-<style type="text/css">
-	.jumbotron{
-		background-color: #FFEBCD;
-		border: 2px solid #008080;
-		box-shadow: 2px 4px gray;
-		border-radius: 4px;
-	}
 
-	.colhead{
-		background-color: #008080;
-		color: white;
-		text-shadow: 2px 2px 4px #000000; 
-		border-radius: 50px;
-		padding: 18px;
-		margin: 20px 0px 10px 0px;
-		border: lightcoral 4px solid;
-		border-style: groove;
-		text-align: center;
-	}
-
-	.columsCds{
-		border: #008080 4px solid;
-		border-radius: 15px;
-		background-color: #f2f2f2;	
-	}
-
-	.columsBooks{
-		border: lightcoral 4px solid;
-		border-radius: 15px;
-		background-color: #f2f2f2;
-	}
-
-	.columsDvd{
-		border: #008080 4px solid;
-		border-radius: 15px;
-		background-color: #f2f2f2;
-	}
-
-	.columsComics{
-		border: lightcoral 4px solid;
-		border-radius: 15px;
-		background-color: #f2f2f2;
-
-	}
-
-	.pic{
-		display: flex; 
-		justify-content: center;
-	}
-
-	img{
-		border: 1px solid;
-		margin-top: 10px;
-    	padding: 6px;
-    	box-shadow: 4px 8px #888888;
-	}
-
-	.imgCds{
-		width: 100%;
-		height: 350px;
-	}
-
-	.imgBooks{
-		width: 80%;
-		height: 400px;
-	}
-
-	.imgDvds{
-		width: 70%;
-		height: 400px;
-	}
-
-	.imgComics{
-		width: 100%;
-		height: 500px;
-	}
-
-	.details{
-		border:  1px solid lightgrey;
-		border-radius: 5px;
-		box-shadow: 2px 4px #888888;
-		padding: 6px;
-	}
-
-	.ratandstars{
-		display: flex;
-		align-items: center ; 
-	}
-
-	.btnrating{
-		border-radius: 10px;
-	}
-
-	.rating{
-		padding-bottom: 20px;
-	}
-
-	.stars{
-		padding-bottom: 20px;
-	}
-
-	.footer{
-		background-color: darkgray;
-		color: white;
-		line-height: 3;
-		border-radius: 2px;
-		margin-top:  40px;
-
-	}
-
-
-</style>
 </head>
+
 <body>
-	<div class="container">
+<div class="container">
 
-	<!-- Navbar with Search Form and Dropdown Button -->
-
+	<!-- Navbar with Search Form and Dropdown Button search is not working but dropdown buttons are connected to the right row-->
 		<nav class="fixed-top navbar navbar-expand-sm navbar-light bg-light mb-3">
 	        <div class="container">
-	          	<a class="navbar-brand" href="#">Media-Thekary</a>
+	          	<a class="navbar-brand" href="#"><b><i>Media-Thekary</i></b></a>
 	          	<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav2"><span class="navbar-toggler-icon"></span>
 	          	</button>
 	            <div class="collapse navbar-collapse" id="navbarNav2">
@@ -142,6 +31,7 @@
 	                  	<li class="nav-item">
 	                      <a class="nav-link" href="#">About</a>
 	                  	</li>
+	                  	<!-- Dropdown menu -->
 	                  	<li class="nav-item dropdown">
 	                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Media & Categories</a>
 	                    	<div class="dropdown-menu">
@@ -151,11 +41,14 @@
 		                      <a href="#COMICHEAD" class="dropdown-item">Comics</a>
 	                    	</div>
 	                  	</li>
+	                  	<li class="nav-item">
+	                     <a class="nav-link" href="#ADDM">Add new media</a> 
+	                  	</li>
 	             	</ul>
 
 	              	<form class="form-inline my-2 my-lg-0">
 	                	<input type="text" class="form-control mr-sm-2" placeholder="Search">
-	                	<button class="btn btn-outline-success my-2 my-sm-0">Search</button>
+	                	<button class="btn btn-outline-secondary my-2 my-sm-0">Search</button>
 	             	</form>
 	            </div>
 	        </div>
@@ -165,11 +58,13 @@
 		<br>
 
 	<!-- Jumbotron-Header unit -->
-		<div class="jumbotron mt-5">
+		<div class="jumbotron mt-5" style="background-color: #fffaf4"> 
+			<!-- color is not working with the css file thats why it is here -->
 			 <h1><center>Ninjas Media-Thekary</center></h1>
 			 <p><center>This is a Media-Thekary, where you can search for and find different kind of Movies, Books, Music albums and Comics.<center></p>
 		</div>
 
+ 	<!-- Main row-section with one row per header and one row for the media-items -->
 		<div class="row row1"> 
 			<div class="col col-md-12 col-sm-12 colhead colhead1"><h1 id="CDHEAD">CDs</h1>
 			</div>
@@ -195,11 +90,73 @@
 
 
 		<div class="row"> 
-			<div class="col col-md-12 col-sm-12 colhead"><h1 >COMICS</h1>
+			<div class="col col-md-12 col-sm-12 colhead"><h1 id="COMICHEAD">COMICS</h1>
 			</div>
 		</div>
 		<div class="row" id="COMIC">
 		</div>
+
+		<!-- trying the modal here -funktionality not given -->
+		<div class="row" id="NEWMEDIA">
+			<div class="col col-md-12 col-sm-12">
+				<center>
+					<!-- Modal-form-button -->
+					<button class="btn btn-info addmedia" id="ADDM"data-toggle="modal" data-target="#loginModal">Add new media</button>
+				</center>
+			</div>
+		</div>
+			<!-- Adding a modal with a form -->
+		<div class="modal" id="loginModal"> 
+		      <div class="modal-dialog">
+		        <div class="modal-content">
+		          <div class="modal-header">
+		            <h5 class="modal-title">Add new media</h5>
+		            <button class="close" data-dismiss="modal">&times;</button>
+		          </div>
+		          <div class="modal-body">
+		          	<!-- Form starts here -->
+		            <form>
+		            	<!-- Select-bar -->
+		              <div class="form-group">	
+		              	<label for="title">Choose Category:</label>
+		            	<select class="custom-select">
+		            	  <option selected>Choose category</option>
+		            	  <option value="1">CDs</option>
+		            	  <option value="2">Books</option>
+		            	  <option value="3">DVDs</option>
+		            	  <option value="3">Comics</option>
+		            	</select>
+		               </div>
+		              <div class="form-group">
+		                <label for="title">Title:</label>
+		                <input type="text" placeholder="Type title" class="form-control">
+		              </div>
+		              <div class="form-group">
+		                <label for="author">Author:</label>
+		                <input type="text" placeholder="Type author" class="form-control">
+		              </div>
+		              <div class="form-group">
+		                <label for="genre">Genre:</label>
+		                <input type="text" placeholder="Type genre" class="form-control">
+		              </div>
+		              <div class="form-group">
+		                <label for="publisher">Publisher:</label>
+		                <input type="text" placeholder="Type publisher" class="form-control">
+		              </div>
+		              <!-- Get file from your files in your device and insert it here -->
+					  <div class="form-group">
+					    <label for="exampleFormControlFile1">Upload image cover from your files:</label>
+					    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+					  </div>
+		            </form>
+		          </div>
+		          <div class="modal-footer">
+		            <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+		            <button class="btn btn-primary" data-dismiss="modal">Add</button>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
 	
 	</div>
 
@@ -207,6 +164,9 @@
 			<center>ninjas media-thekary &copy Nina Smolen 2018</center>
 		</div>
 	
+
+
+		
 	<script src="myscript.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
